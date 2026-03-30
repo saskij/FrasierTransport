@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#353534",
+              "secondary": "#ffb3ad",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary": "#003257",
+              "surface-dim": "#131313",
+              "on-tertiary-fixed-variant": "#00497b",
+              "primary-fixed-dim": "#ffb68b",
+              "outline": "#a48c7e",
+              "on-primary-fixed-variant": "#753400",
+              "tertiary": "#9ccaff",
+              "on-surface-variant": "#ddc1b2",
+              "surface": "#131313",
+              "primary": "#ffb68b",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed": "#ffdad6",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#e5e2e1",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#003860",
+              "secondary-fixed-dim": "#ffb3ad",
+              "error": "#ffb4ab",
+              "on-secondary-fixed": "#410003",
+              "surface-container-low": "#1c1b1b",
+              "surface-tint": "#ffb68b",
+              "tertiary-fixed": "#d0e4ff",
+              "secondary-container": "#970313",
+              "on-error": "#690005",
+              "on-primary": "#522300",
+              "surface-container": "#201f1f",
+              "on-secondary-container": "#ff9e97",
+              "inverse-primary": "#994700",
+              "primary-fixed": "#ffdbc8",
+              "on-background": "#e5e2e1",
+              "on-secondary": "#680009",
+              "on-tertiary-fixed": "#001d35",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "on-primary-container": "#5a2700",
+              "surface-container-high": "#2a2a2a",
+              "outline-variant": "#564338",
+              "primary-container": "#f08133",
+              "surface-bright": "#3a3939",
+              "tertiary-container": "#38a4fe",
+              "on-primary-fixed": "#321300",
+              "on-secondary-fixed-variant": "#930012",
+              "tertiary-fixed-dim": "#9ccaff"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-industrial-gradient {
+            background: linear-gradient(to right, #f08133, #ffb68b);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-900/70 backdrop-blur-xl flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="font-inter font-black text-2xl tracking-tighter text-white uppercase">Frasier Transport</div>
+<div class="hidden md:flex items-center space-x-8 font-inter text-base tracking-tight">
+<a class="text-orange-500 font-bold border-b-2 border-orange-500 pb-1" href="#">Home</a>
+<a class="text-neutral-300 hover:text-white transition-colors" href="#">History</a>
+<a class="text-neutral-300 hover:text-white transition-colors" href="#">Equipment</a>
+<a class="text-neutral-300 hover:text-white transition-colors" href="#">Careers</a>
+<a class="text-neutral-300 hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<button class="bg-industrial-gradient text-on-primary-container px-6 py-2 rounded-sm font-label font-bold uppercase tracking-wider scale-95 active:scale-90 transition-transform">
+            Apply Now
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-end overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Classic Red Peterbilt Truck" class="w-full h-full object-cover grayscale-[0.2] brightness-75" data-alt="Close-up side profile of a polished deep red classic Peterbilt semi-truck parked in a high-contrast industrial loading bay at twilight with warm orange rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUsUUfUerA8Pd9bC9iXwJEiyMbhwuOgdxwkZRpncQg0AfuH7OGW5fqKT-KuX230-K78NzupMW0ZEGCVHclI7qG_mAA5pzK8BUwLD2tSMYnGwtoVsmojB4cAsn4DpNocacso17fXkbz0bAzmgqNyDMhhDhN9iOF4KjFHRKYbmgRRUR2K4eCMqlZg9Lava6UIFzgnfBvRkZZza7lYkmU-cgrbF85WuUcBYdG5cxIUNEeH5PfzrNqA3hu6RB36wapeKhJ6qWP0L9EDw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-8 pb-24 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<div class="inline-block py-1 px-3 bg-primary-container text-on-primary-container font-label text-sm font-bold uppercase tracking-widest mb-6">
+                        Est. 1994
+                    </div>
+<h1 class="text-white font-headline font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none mb-6">
+                        Celebrating 30 Years <br/>of <span class="text-primary italic">Excellence</span> in Transport.
+                    </h1>
+<p class="font-label text-xl md:text-2xl text-on-surface-variant uppercase tracking-widest leading-relaxed max-w-2xl">
+                        Reliable. Professional. Family-Owned.
+                    </p>
+</div>
+<div class="md:col-span-4 flex justify-start md:justify-end">
+<div class="bg-surface-variant/70 backdrop-blur-xl p-8 rounded-sm border-l-4 border-primary">
+<span class="font-label text-xs text-primary font-bold uppercase tracking-tighter block mb-2">Technical Status</span>
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<span class="text-white font-headline font-bold">Logistics Active</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Serving the backbone of America with precision-engineered routing and fleet management for three decades.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="bg-surface py-32 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<h2 class="font-headline font-black text-4xl md:text-5xl text-white uppercase tracking-tighter mb-8 leading-tight">
+                        Our Legacy is <br/>Measured in Miles.
+                    </h2>
+<div class="space-y-6 text-on-surface-variant text-lg max-w-xl">
+<p>
+                            What started as a single red Peterbilt in 1994 has evolved into a premier regional logistics powerhouse. Frasier Transport was founded on the belief that a driver's handshake should be as reliable as their engine.
+                        </p>
+<p>
+                            Thirty years later, we remain family-owned and operated, ensuring that every load we carry receives the same personal dedication that built this company from the ground up.
+                        </p>
+<div class="pt-8">
+<a class="inline-flex items-center gap-2 font-label text-primary font-bold uppercase tracking-widest border-b-2 border-primary/20 hover:border-primary transition-all pb-2" href="#">
+                                Read Our Full Story
+                                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2 relative">
+<div class="bg-surface-container-low p-4 h-[500px] relative">
+<img alt="Vintage Peterbilt Truck" class="w-full h-full object-cover filter grayscale" data-alt="Archival black and white photo of a classic Peterbilt cab-over truck from the 90s parked at a rural delivery dock." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFl21NR4HoPsRmJ6fDsjbPRxzmLcrby5xQRHR1edWTOleO7nc9sXt4gkj7EO9StV6tDfpisq_NwcSaol6XJL12rVzoWlZ3qLbY8KrCfQk7L_yJsZSpMUDTD4FaGYwHo3gZouirNqVXvSgYQXe9gFr8jrHAkr-O31vBTGZ0lnAILBfoaXzXmznr5aPXXfc3ivPGCPmAyL2oFxtPZDUQfIi2Gk2zDIkvYemcJpPt6CqSB2juaW7w1HI51r0HTxzQXdmee-pE5TCbpg"/>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-highest p-8 hidden lg:block">
+<p class="font-headline font-black text-6xl text-primary leading-none">30</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">Years of Service</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Fleet (Bento Style) -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label text-primary font-bold uppercase tracking-widest text-sm block mb-4">Precision Engineering</span>
+<h2 class="font-headline font-black text-4xl md:text-6xl text-white uppercase tracking-tighter">The Fleet</h2>
+</div>
+<p class="text-on-surface-variant max-w-sm font-body">
+                        We invest in the best. Our fleet is comprised of late-model Peterbilts and Kenworths, maintained to surgical standards.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface overflow-hidden group cursor-pointer h-[400px] relative">
+<img alt="Modern Kenworth Fleet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide shot of a fleet of white and orange Kenworth heavy duty trucks lined up in a neat row at a modern logistics terminal under bright afternoon sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnHskN_9wSxg7_LlE5tW_pPQVATOdPmh9M-yZB733xgScQc_x94VHBM-gEQ0BeKlyu8-Zerjqmoa_wP8cXLzSU2Jh6hIe6k5XUxeiPjOxXA8OxKcd8_KOOeH9N9wvkKLCECb_EAbKn_Lic889sr0bidtkgGWbmPqE6-IBIEfB7roSCcHiDswI6Y7I94lShIygfoMv6OqACNqPWt6_J1cz4-MITxIuCIMRWXVq1y4VKxP1t9kYG3qKGFLyx7OZTNcDqTc3_tvb3XQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<p class="font-label text-primary text-xs font-bold uppercase mb-2">Heavy Haul</p>
+<h3 class="text-white font-headline text-3xl font-black uppercase">Modern Kenworth W900L</h3>
+</div>
+</div>
+<!-- Small Sidebar -->
+<div class="md:col-span-4 bg-primary-container p-8 flex flex-col justify-between h-[400px]">
+<span class="material-symbols-outlined text-on-primary-container text-5xl" data-icon="settings_suggest">settings_suggest</span>
+<div>
+<h3 class="font-headline font-black text-2xl text-on-primary-container uppercase leading-tight mb-4">Meticulously Maintained</h3>
+<p class="text-on-primary-container/80 text-sm">
+                                Every rig in the Frasier fleet undergoes a 120-point inspection every 15,000 miles. We don't just drive; we engineer reliability.
+                            </p>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="md:col-span-4 bg-surface-container-highest p-8 h-[300px] flex flex-col justify-center">
+<h4 class="font-label text-primary font-bold text-4xl mb-2">99.8%</h4>
+<p class="font-label text-white uppercase tracking-widest text-sm">On-Time Delivery Rate</p>
+</div>
+<div class="md:col-span-8 bg-surface overflow-hidden group cursor-pointer h-[300px] relative">
+<img alt="Peterbilt Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Interior view of a modern semi-truck cab showing ergonomic dashboard, high-tech infotainment system, and leather seats with orange stitching." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvm4yVbX2LlZPDS8EcERh1e9vG5v8dGM4zfbnYjbcT4w3MyV4Nmb6wlxRH42lKFA5ywCM8nGaODeme0Zq_Hpx2TiZwkvNbj0i4b_DmjjU6bJ9ZtCWoCttd8XYHqKLYGp9JmZeg1sF9Q1gVG4ROS3FmtlvSbszr6SMVHvi3qfgSb0HnCZJgrc7Z38q2TpdvXAuhkmo4YQqlWgnKQUkBAKbwu9DaOqHPv3D2Og-Wu2tlE5yWjNG4IwCzLFYVSAprfv84ByEme99hnQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="text-white font-headline text-2xl font-black uppercase">Driver-First Comfort</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Join the Team (CTA) -->
+<section class="bg-surface py-32 px-8">
+<div class="max-w-7xl mx-auto bg-surface-container-high relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
+<img alt="Professional Truck Driver" class="w-full h-full object-cover brightness-50 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Candid shot of a professional truck driver in reflective gear performing a pre-trip inspection on a heavy-duty truck engine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYo1xmaLsiylHRWVamO2t5aAKThA_XnnNO8G3yZbOLwEe3O3vuzy0WtGUQ7QJURMQF4GpYz9bpR0CiFrIoAMbDKYblHKLiaRdK7T4GR0CJvL6jCtFem_HXetc3XHmDRuohXa0hU3lnIyGjqV4gUDQqB_VwfXv8_dK7Ce8-yDETI8DeRX2jCcKewlEuBGFQZxIueWIee2RUbzsbvj4bWuynNHg0-r3oYA89mKt-cOG130NFrS2KNGdEzD85c9TULYhOi45lRbln8w"/>
+</div>
+<div class="relative z-10 lg:w-3/5 p-12 md:p-24">
+<span class="font-label text-primary font-bold uppercase tracking-widest text-sm block mb-6">Career Opportunities</span>
+<h2 class="font-headline font-black text-4xl md:text-6xl text-white uppercase tracking-tighter mb-8 leading-none">
+                        Driven by People. <br/>Not Just Engines.
+                    </h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md leading-relaxed">
+                        Join a family that respects your time off as much as your time on the road. We offer industry-leading pay, late-model trucks, and a culture that knows you by name, not your unit number.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-industrial-gradient text-on-primary-container px-10 py-4 rounded-sm font-label font-bold uppercase tracking-widest transition-transform active:scale-95 shadow-xl">
+                            Join The Frasier Team
+                        </button>
+<button class="border border-outline-variant text-white px-10 py-4 rounded-sm font-label font-bold uppercase tracking-widest hover:bg-white/5 transition-colors">
+                            View Benefits
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/Location Info -->
+<section class="bg-surface pb-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-px bg-outline-variant/10">
+<div class="bg-surface p-12">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="location_on">location_on</span>
+<h3 class="font-headline font-bold text-white uppercase tracking-tight mb-4">Headquarters</h3>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest leading-relaxed">
+                            1200 Logistics Drive<br/>
+                            Industrial Park North<br/>
+                            Charlotte, NC 28202
+                        </p>
+</div>
+<div class="bg-surface p-12">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="call">call</span>
+<h3 class="font-headline font-bold text-white uppercase tracking-tight mb-4">Operations</h3>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest leading-relaxed">
+                            Driver Support: (800) 555-0199<br/>
+                            Sales &amp; Quotes: (800) 555-0144<br/>
+                            Main Office: (704) 555-0122
+                        </p>
+</div>
+<div class="bg-surface p-12">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="mail">mail</span>
+<h3 class="font-headline font-bold text-white uppercase tracking-tight mb-4">Inquiries</h3>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest leading-relaxed">
+                            dispatch@frasiertransport.com<br/>
+                            careers@frasiertransport.com<br/>
+                            safety@frasiertransport.com
+                        </p>
+</div>
+</div>
+<div class="mt-16 h-[400px] w-full bg-surface-container-low relative grayscale contrast-125 brightness-75 overflow-hidden">
+<img alt="Logistics Hub Map" class="w-full h-full object-cover" data-alt="Satellite view of a massive regional trucking terminal and distribution hub showing hundreds of trailers neatly parked in a geometric grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAij1okaJQ8aXAjg_7cVmpmwJDtJ0cSfKA-WrYp1spN-qGTF8t08qyWJirJ-_qaTcTWX5L8qV0fR56JbmBqqWMdfGel6FPvJtv0kiMpE3m9xrRxPYuXqd3jRXnugAe96pUJbYLpHw9Gq2mC02e9uoguVGt6Pdaa0zDqycWkFFzFWWmE-y2tE72XyPzZMHeVh6GUdCgzVf_7shnrYSRg6HFxLAezlqWK92qth9z8fcfd2CsAgsleugaAOs9l405k5Z3huz7FdICkHw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary p-4 rounded-full animate-pulse shadow-[0_0_20px_rgba(240,129,51,0.5)]">
+<div class="w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
+<div class="md:col-span-1">
+<div class="font-inter font-black text-xl text-white mb-6 uppercase">Frasier Transport</div>
+<p class="text-neutral-500 font-label text-xs leading-relaxed uppercase tracking-widest">
+                    Engineering precision in logistical movement since 1994. Built on reliability, family values, and industrial excellence.
+                </p>
+</div>
+<div class="md:col-span-2 grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<h4 class="text-on-surface-variant font-label font-bold text-xs uppercase tracking-widest mb-2">Company</h4>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Home</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">About Us</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Fleet</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-on-surface-variant font-label font-bold text-xs uppercase tracking-widest mb-2">Legal &amp; Safety</h4>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Safety Standards</a>
+<a class="text-neutral-500 hover:text-orange-500 transition-colors font-label text-sm uppercase tracking-widest" href="#">Driver Portal</a>
+</div>
+</div>
+<div class="md:col-span-1 flex flex-col justify-between">
+<div>
+<h4 class="text-on-surface-variant font-label font-bold text-xs uppercase tracking-widest mb-4">Connect</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-neutral-500 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-neutral-500 cursor-pointer hover:text-primary transition-colors" data-icon="share">share</span>
+<span class="material-symbols-outlined text-neutral-500 cursor-pointer hover:text-primary transition-colors" data-icon="link">link</span>
+</div>
+</div>
+<p class="text-neutral-500 font-label text-[10px] uppercase tracking-widest leading-tight mt-8">
+                    © 2024 Frasier Transport. All Rights Reserved. Engineered for Precision.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
